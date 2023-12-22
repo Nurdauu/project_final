@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Degirmen",
+        "address": "Baitursynov 63",
+        "cuisine": "turkish",
+        "website": "https://degirmen.kz/",
+        "description": "Delicious Turkish dishes, nice staff",
+        "id": "c2bf38cc-78ad-4a11-9369-6b16023ac892"
+    },
+    {
+        "name": "TeaTime",
+        "address": "Abylaikhan 1",
+        "cuisine": "kazakh, turkish",
+        "website": "https://teatime.kz/",
+        "description": "High quality and inexpensive, delicious burgers",
+        "id": "1ede9e72-4e80-46b5-93a2-70fea91e7fb1"
+    },
+    {
+        "name": "Pamukkale",
+        "address": "Abylaikhan 35",
+        "cuisine": "turkish",
+        "website": "https://pamukkale.kz/",
+        "description": "Nice atmosphere, best pizzas in Kaskelen",
+        "id": "64e27253-984d-46c9-8007-c27282f551d8"
+    },
+    {
+        "name": "BubbleGum",
+        "address": "Shevchenko 99",
+        "cuisine": "eastern",
+        "website": "https://bubblegum.kz/",
+        "description": "The world of entertainment and favorite holidays",
+        "id": "dca793da-0ad7-4e4e-90c3-ab57e8182940"
+    },
+    {
+        "name": "Kunjut",
+        "address": "Makatayeva 126",
+        "cuisine": "pan-asian, eastern, georgian",
+        "website": "https://kunjut.kz/",
+        "description": "There is a dance floor, karaoke and large VIP rooms",
+        "id": "26dde1a8-eacd-4922-8684-45857c7e96a3"
+    },
+    {
+        "name": "Magnit",
+        "address": "Omskaya 125/1",
+        "cuisine": "eastern, caucasian,",
+        "website": "https://magnit.kz/",
+        "description": "Cool dance floor and very affordable",
+        "id": "913da69e-e854-4932-9be0-0a044b8b4da3"
+    },
+    {
+        "name": "Ketchup",
+        "address": "Dostyk 43",
+        "cuisine": "europian, american",
+        "website": "https://ketchup.kz/",
+        "description": "Good fast food center, inexpensive",
+        "id": "f827a8e1-5492-4e7f-9e16-bb6f4765676a"
+    },
+    {
+        "name": "Darhan",
+        "address": "Sukhambayeva 23",
+        "cuisine": "chinese",
+        "website": "https://darhan.kz/",
+        "description": "Best staff, breathtakingly amazing foods",
+        "id": "29f6b13b-11c9-44bd-89a5-d261e1dd2c21"
+    },
+    {
+        "name": "96",
+        "address": "Latif Khamidi 29",
+        "cuisine": "kazakh, uzbek, chinese",
+        "website": "https://cafe96.kz/",
+        "description": "Very delicious uzbek meals",
+        "id": "9e3f5589-fbe0-4e4b-82c0-3bc77e488284"
+    }
+]

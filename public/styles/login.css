@@ -1,0 +1,29 @@
+/* styles/login.css */
+
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* Apply Montserrat font and text color to body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: rgb(80, 57, 7); /* Text color */
+}
+
+/* Apply Montserrat font to the "Create an account" heading */
+.create-account-heading {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Change the background color of the register button */
+.btn-success {
+  background-color: rgb(175, 134, 48);
+}
+
+.btn-success:hover {
+    background-color: rgb(100, 81, 43);
+  }
+
+.btn-success {
+    font-weight: bold;
+  }

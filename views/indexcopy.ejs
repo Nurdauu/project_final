@@ -1,0 +1,70 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head') %>
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+    <style>
+      #new-restaurant-message {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background-color: #ffffff;
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+        max-width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include('includes/headercopy') %> <%- include('includes/side-drawer') %>
+    <main>
+      <h1 id="new-restaurant-message">
+        New Restaurant is added
+      </h1>
+      <h1>Make the world a tastier place!</h1>
+      <p>
+        Share your favorite restaurants or find recommendations of other users!
+      </p>
+      <ul id="actions">
+        <li>
+          <a href="/restaurants">Browse Shared Restaurants</a>
+        </li>
+        <li>
+          <a href="/recommend">Share Your Favorite Restaurant</a>
+        </li>
+      </ul>
+      <script defer src="/app.js"></script>
+      <script>
+        const socket = io();
+        // Listen for WebSocket open event
+        socket.on("connect", () => {
+          console.log("WebSocket connection opened");
+        });
+
+        // Listen for WebSocket messages
+        socket.on("new-restaurant", (data) => {
+          console.log("Received message from server:", data);
+
+          // Update UI when a new restaurant is received
+          const messageElement = document.getElementById(
+            "new-restaurant-message"
+          );
+          messageElement.textContent = "New restaurant added! Check it out!";
+          messageElement.style.display = "block";
+
+          // Hide the message after 5 seconds
+          setTimeout(() => {
+            messageElement.style.display = "none";
+          }, 5000);
+        });
+      </script>
+    </main>
+  </body>
+</html>
